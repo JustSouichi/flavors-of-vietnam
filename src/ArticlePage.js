@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import articles from "./articles.json";
 import { useParams } from 'react-router-dom';
 
 const ArticlePage = () => {
   const { slug } = useParams();
   const article = articles.find(a => a.title.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '') === slug);
+
+  const [pageTitle, setPageTitle] = useState('');
+
+  useEffect(() => {
+    if (article) {
+      setPageTitle(article.title); // Set the page title
+      document.title = article.title; // Change document title
+    }
+  }, [article]);
 
   if (!article) {
     return <div className="text-center py-8"><p className="text-xl">Article not found</p></div>;
