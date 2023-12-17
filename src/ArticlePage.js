@@ -1,11 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import articles from "./articles.json";
 import { useParams } from 'react-router-dom';
-
-const articles = [
-  // Same articles array as before
-  { id: 1, title: 'Vietnamese Pho', excerpt: 'Discover the richness of Pho...', image: '1.jpg' },
-  { id: 2, title: 'Banh Mi', excerpt: 'The classic Vietnamese sandwich...', image: '2.jpg' },
-];
 
 const ArticlePage = () => {
   const { slug } = useParams();

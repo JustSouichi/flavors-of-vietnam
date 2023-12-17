@@ -1,13 +1,13 @@
 import React from 'react';
+import articles from "./articles.json";
 
-const articles = [
-  // Example data. Replace this with your actual data.
-  { id: 1, title: 'Vietnamese Pho', excerpt: 'Discover the richness of Pho...', image: '1.jpg' },
-  { id: 2, title: 'Banh Mi', excerpt: 'The classic Vietnamese sandwich...', image: '2.jpg' },
-  // More articles...
-];
 
 const HomePage = () => {
+
+  const titleToSlug = (title) => {
+    return title.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '');
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       {/* Navigation */}
@@ -37,7 +37,7 @@ const HomePage = () => {
               <div className="p-6">
                 <h2 className="text-xl font-semibold mb-3">{article.title}</h2>
                 <p className="text-gray-600">{article.excerpt}</p>
-                <a href={`/articles/${article.id}`} className="text-blue-500 hover:text-blue-600 transition duration-300 mt-4 inline-block">Read More</a>
+                <a href={`/articles/${titleToSlug(article.title)}`} className="text-blue-500 hover:text-blue-600 transition duration-300 mt-4 inline-block">Read More</a>
               </div>
             </div>
           ))}

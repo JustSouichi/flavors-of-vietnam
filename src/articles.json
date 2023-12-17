@@ -1,16 +1,64 @@
 [
-    {
+  {
       "id": 1,
       "title": "Vietnamese Pho",
-      "excerpt": "Discover the richness of Pho...",
-      "image": "1.jpg"
-    },
-    {
+      "excerpt": "Discover the richness of Pho, a traditional Vietnamese soup known for its fragrant broth and hearty ingredients. A classic dish beloved by many, Pho combines rice noodles with various herbs, spices, and usually beef or chicken, creating a symphony of flavors in every bowl.",
+      "image": "1.jpg",
+      "difficulty": "Medium",
+      "ingredients": [
+          "Beef bones",
+          "Onions",
+          "Ginger",
+          "Star anise",
+          "Cloves",
+          "Cinnamon sticks",
+          "Beef brisket",
+          "Rice noodles",
+          "Bean sprouts",
+          "Fresh herbs (cilantro, basil, mint)",
+          "Lime wedges",
+          "Hoisin sauce",
+          "Sriracha sauce"
+      ],
+      "steps": [
+          "Char onion and ginger until blackened.",
+          "Boil beef bones in water and skim off impurities.",
+          "Add charred onion and ginger along with spices.",
+          "Simmer for several hours.",
+          "Cook beef brisket in broth, then slice thinly.",
+          "Prepare rice noodles as per package instructions.",
+          "Assemble bowls with noodles, broth, beef, and toppings.",
+          "Serve hot with fresh herbs and sauces."
+      ]
+  },
+  {
       "id": 2,
       "title": "Banh Mi",
-      "excerpt": "The classic Vietnamese sandwich...",
-      "image": "2.jpg"
-    }
-    
-  ]
-  
+      "excerpt": "Explore the world of Banh Mi, the classic Vietnamese sandwich that harmoniously blends East and West. This culinary delight features a crispy baguette filled with a variety of ingredients, such as savory meats, pickled vegetables, fresh herbs, and spicy condiments, making it a perfect choice for any time of the day.",
+      "image": "2.jpg",
+      "difficulty": "Easy",
+      "ingredients": [
+          "1 French baguette",
+          "200g thinly sliced cooked pork",
+          "50g liver pâté",
+          "1 cucumber, sliced",
+          "4 tablespoons pickled carrots and daikon radish",
+          "Fresh cilantro leaves",
+          "2 tablespoons soy sauce",
+          "1 tablespoon fish sauce",
+          "1 small chili, sliced (optional)",
+          "Mayonnaise (optional)"
+      ],
+      "steps": [
+          "Slice the baguette lengthwise but do not cut all the way through, leaving one edge intact.",
+          "Spread liver pâté on one side of the baguette.",
+          "Layer the thinly sliced pork on top of the pâté.",
+          "Add cucumber slices and pickled carrots and daikon radish.",
+          "Drizzle with soy sauce and fish sauce.",
+          "Add fresh cilantro leaves and sliced chili if desired.",
+          "Optionally, spread mayonnaise on the other side of the baguette.",
+          "Close the sandwich and press lightly.",
+          "Serve immediately or wrap in parchment paper for a to-go meal."
+      ]
+  }
+]
