@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './HomePage';
 import ArticlePage from './ArticlePage';
+import NoFound from "./NoFound"
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/articles/:slug" element={<ArticlePage />} />
-        {/* Add other routes as needed */}
+        <Route path="*" element={<NoFound />} />
       </Routes>
     </Router>
   );
