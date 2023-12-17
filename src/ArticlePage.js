@@ -60,32 +60,31 @@ const ArticlePage = () => {
 
       {/* Article Content */}
       <main className="container mx-auto px-4 py-12">
-        <h1 className="text-5xl font-bold text-center text-blue-600 mb-8">{article.title}</h1>
-        <div className="flex justify-center">
-          <img src={`${process.env.PUBLIC_URL}/img/${article.image}`} alt={article.title} className="rounded-lg shadow-xl max-h-80 w-auto" />
-        </div>
-        
-        <div className="bg-white rounded-lg shadow-lg p-8 mt-10">
-          <h2 className="text-3xl font-semibold text-center mb-6">About This Recipe</h2>
-          <p className="text-lg text-center text-gray-700 mb-4">{article.excerpt}</p>
-          <p className="text-center mb-4 text-blue-500 font-semibold">Difficulty: {article.difficulty}</p>
-
-          <h3 className="text-2xl font-semibold mt-6 mb-4">Ingredients</h3>
-          <ul className="grid grid-cols-2 gap-4 text-md">
-            {article.ingredients.map((ingredient, index) => (
-              <li key={index} className="flex items-center">
-                <span className="inline-block w-6 h-6 bg-blue-200 rounded-full mr-3"></span> {/* Placeholder for ingredient icon */}
-                {ingredient}
-              </li>
-            ))}
-          </ul>
-
-          <h3 className="text-2xl font-semibold mt-8 mb-4">Preparation Steps</h3>
-          <ol className="list-decimal list-inside space-y-4">
-            {article.steps.map((step, index) => (
-              <li key={index} className="text-md">{step}</li>
-            ))}
-          </ol>
+        <div className="max-w-4xl mx-auto"> {/* Adjusting the max-width here */}
+          <h1 className="text-5xl font-bold text-center text-blue-600 mb-8">{article.title}</h1>
+          <div className="flex justify-center">
+            <img src={`${process.env.PUBLIC_URL}/img/${article.image}`} alt={article.title} className="rounded-lg shadow-xl max-h-80 w-auto" />
+          </div>
+          <div className="bg-white rounded-lg shadow-lg p-8 mt-10">
+            <h2 className="text-3xl font-semibold text-center mb-6">About This Recipe</h2>
+            <p className="text-lg text-center text-gray-700 mb-4">{article.excerpt}</p>
+            <p className="text-center mb-4 text-blue-500 font-semibold">Difficulty: {article.difficulty}</p>
+            <h3 className="text-2xl font-semibold mt-6 mb-4">Ingredients</h3>
+            <ul className="grid grid-cols-2 gap-4 text-md">
+              {article.ingredients.map((ingredient, index) => (
+                <li key={index} className="flex items-center">
+                  <span className="inline-block w-6 h-6 bg-blue-200 rounded-full mr-3"></span> {/* Placeholder for ingredient icon */}
+                  {ingredient}
+                </li>
+             ))}
+            </ul>
+            <h3 className="text-2xl font-semibold mt-8 mb-4">Preparation Steps</h3>
+            <ol className="list-decimal list-inside space-y-4">
+              {article.steps.map((step, index) => (
+                <li key={index} className="text-md">{step}</li>
+              ))}
+            </ol>
+          </div>
         </div>
       </main>
 
