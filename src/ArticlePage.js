@@ -13,7 +13,7 @@ const ArticlePage = () => {
   useEffect(() => {
     if (article) {
       setPageTitle(article.title); // Set the page title
-      document.title = article.title; // Change document title
+      document.title = article.title + ' Original Recipe'; // Change document title
     }
   }, [article]);
 
