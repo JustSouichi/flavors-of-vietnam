@@ -37,6 +37,7 @@ const HomePage = () => {
           ))}
         </div>
       </main>
+      
       <Footer />
     </div>
   );
