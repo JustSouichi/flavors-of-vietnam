@@ -1,16 +1,11 @@
 import React from 'react';
 
-
-
 const articles = [
   // Questi dati sono solo per l'esempio. Dovresti caricarli da un file JSON.
-  { id: 1, path: '1.jpg', title: 'Vietnamese Pho', excerpt: 'Discover the richness of Pho...' },
-  { id: 2, path: './2.jpg', title: 'Banh Mi', excerpt: 'The classic Vietnamese sandwich...' },
+  { id: 1, title: 'Vietnamese Pho', excerpt: 'Discover the richness of Pho...' },
+  { id: 2, title: 'Banh Mi', excerpt: 'The classic Vietnamese sandwich...' },
   // Aggiungi altri articoli qui...
 ];
-
-
-
 
 const HomePage = () => {
 
@@ -20,7 +15,6 @@ const HomePage = () => {
         <h1 className="text-4xl font-bold text-gray-800">Flavors of Vietnam</h1>
         <p className="text-gray-600">Explore the rich and diverse cuisine of Vietnam</p>
       </header>
-
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {articles.map(article => (
           <article key={article.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
